@@ -1,0 +1,424 @@
+body{
+
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+
+  }
+
+  .header{
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    box-shadow: 0px 7px 10px black;
+    color: white;
+    background-color: black;
+    justify-content: space-between;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+  }
+
+  .siteName{
+
+    margin-left: 2vw;
+    font-weight: bold;
+    font-size: 2vw;
+
+  }
+
+  .inputBox{
+
+    box-shadow: 0px 0px 10px black;
+    border: none;
+    text-align: center;
+    height: 25px;
+    border-radius: 10px;
+    margin-right: 2vw;
+    color: black;
+    font-size: 1vw;
+
+  }
+
+  .inputBox:focus{
+
+    border: none;
+    outline: none;
+    font-size: 1vw;
+
+  }
+
+  .searchButton{
+
+    margin-right: 2vw;
+    width: 80px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    box-shadow: 0px 0px 10px black;
+    transition: 0.3s;
+    font-size: 1vw;
+
+  }
+
+  .searchButton:hover{
+
+    margin-right: 2vw;
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    box-shadow: 0px 0px 15px white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1vw;
+
+  }
+
+  .searchButton:active{
+
+    margin-right: 2vw;
+    width: 70px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    box-shadow: 0px 0px 5px white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1vw;
+
+  }
+
+
+  .movies{
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Allows wrapping to the next line */
+    justify-content: center; /* Center the movie cards */
+    align-items: stretch;
+
+  }
+
+  .movieCard{
+
+    flex: 1 1 calc(23% - 10px); /* Takes 1/3 of the row, accounting for margin */
+    padding: 0;
+    padding-top: 2%;
+    margin: 5%;
+    width: 50vw;
+    height: auto;
+    background-color: white;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 20px;
+    transition: 0.3s;
+
+  }
+
+  .movieCard:hover{
+
+    flex: 1 1 calc(23% - 10px); /* Takes 1/3 of the row, accounting for margin */
+    padding: 0;
+    padding-top: 2%;
+    margin: 3%;
+    width: 50vw;
+    height: auto;
+    background-color: black;
+    color: white;
+    box-shadow: 0px 0px 30px black;
+    border-radius: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+
+  }
+
+  .movieCard:hover .moviePoster {
+    box-shadow: 0px 0px 20px white; /* Burada istediğiniz box-shadow değerini ayarlayın */
+}
+
+  .moviePoster{
+
+    object-fit: contain;
+    border-radius: 15px;
+    height: 300px;
+    box-shadow: 0px 0px 20px black;
+
+  }
+
+  .movieName{
+
+    margin-left: 6%;
+    text-align: start;
+    font-weight: bold;
+    font-size: 2vw;
+
+  }
+
+  .movieInfo{
+
+    font-size: 1vw;
+    margin-left: 6%;
+    text-align: start;
+    padding: 2%;
+
+  }
+
+  .movieButtonWatch{
+
+    margin-bottom: 5%;
+    margin-top: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-right: 2vw;
+    height: 30px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    box-shadow: 0px 0px 10px black;
+    transition: 0.3s;
+    font-size: 1vw;
+
+  }
+
+  .movieButtonWatch:hover{
+
+    margin-bottom: 5%;
+    margin-top: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-right: 2vw;
+    height: 35px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    box-shadow: 0px 0px 15px white;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 1vw;
+
+  }
+
+  .movieButtonWatch:active{
+
+    margin-bottom: 5%;
+    margin-top: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-right: 2vw;
+    height: 20px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    box-shadow: 0px 0px 15px white;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 1vw;
+
+  }
+
+  .pageButtonBack{
+
+    margin-bottom: 5%;
+    margin-top: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-right: 2vw;
+    height: 30px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    box-shadow: 0px 0px 10px black;
+    transition: 0.3s;
+    font-size: 1vw;
+
+  }
+
+  .pageButtonBack:hover{
+
+    margin-bottom: 5%;
+    margin-top: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-right: 2vw;
+    height: 35px;
+    border-radius: 10px;
+    background-color: rgb(169, 169, 169);
+    color: black;
+    border: none;
+    box-shadow: 0px 0px 15px black;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 1vw;
+
+  }
+
+  .pageButtonBack:active{
+
+    margin-bottom: 5%;
+    margin-top: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-right: 2vw;
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgb(169, 169, 169);
+    color: black;
+    border: none;
+    box-shadow: 0px 0px 5px black;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 1vw;
+
+  }
+
+  .movieButtonIMDb{
+
+    margin-bottom: 5%;
+    margin-top: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #F5C518;
+    color: black;
+    border: none;
+    box-shadow: 0px 0px 10px black;
+    transition: 0.3s;
+    font-size: 1vw;
+
+  }
+
+  .movieButtonIMDb:hover{
+
+    margin-bottom: 5%;
+    margin-top: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
+    height: 35px;
+    border-radius: 10px;
+    background-color: black;
+    color: #F5C518;
+    border: none;
+    box-shadow: 0px 0px 15px #F5C518;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 1vw;
+
+  }
+
+  .movieButtonIMDb:active{
+
+    margin-bottom: 5%;
+    margin-top: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
+    height: 20px;
+    border-radius: 10px;
+    background-color: black;
+    color: #F5C518;
+    border: none;
+    box-shadow: 0px 0px 15px #F5C518;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 1vw;
+
+  }
+
+  .pageButtonNext{
+
+    margin-bottom: 5%;
+    margin-top: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
+    height: 30px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    box-shadow: 0px 0px 10px black;
+    transition: 0.3s;
+    font-size: 1vw;
+
+  }
+
+  .pageButtonNext:hover{
+
+    margin-bottom: 5%;
+    margin-top: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
+    height: 35px;
+    border-radius: 10px;
+    background-color: rgb(169, 169, 169);
+    color: black;
+    border: none;
+    box-shadow: 0px 0px 15px black;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 1vw;
+
+  }
+
+  .pageButtonNext:active{
+
+    margin-bottom: 5%;
+    margin-top: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
+    height: 20px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    box-shadow: 0px 0px 5px black;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 1vw;
+
+  }
+
+  .pageInfo{
+    
+    font-size: 1vw;
+    font-weight: bold;
+    margin-right: 2%;
+
+  }
+
+  .buttonIcon{
+
+    text-align: center;
+    align-items: center;
+    width: 1.5vw;
+
+  }
+
+  .loadingMessage {
+
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+
+  }
+  
+  .noResultsMessage {
+
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    color: red;
+    
+  }
